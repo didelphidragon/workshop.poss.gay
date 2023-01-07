@@ -1,0 +1,114 @@
+body {
+    background-image: url('/img/game_bg.png');
+}
+
+.main-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); /* for IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* for Safari */
+    width: 50%;
+    height: 35%;
+    background-color: #5900ba7a;
+    padding: 0px 50px 50px 50px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    text-align: top;
+    color: #872bff;
+    font-family: Oswald;
+    font-size: 40px;
+    text-align: center;
+}
+
+h1:hover {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 8s ease infinite;
+}
+
+h3 {
+    text-align: top;
+    color: #5900ba;
+    font-family: Oswald;
+    font-size: 24px;
+    text-align: center;
+}
+
+h3:hover {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 8s ease infinite;
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
+
+.middle-text {
+    width: 75%;
+    padding: 5px;
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: Oswald;
+    font-size: 18px;
+}
+
+.column {
+    width: 33.33%;
+    padding: 5px;
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: Oswald;
+    font-size: 18px;
+}
+
+.column img {
+    image-rendering: crisp-edges;
+    border:10px solid #5900ba7a; 
+    width:100%;
+    max-width:200px;
+    height:100%;
+    max-height:200px;
+    object-fit: cover;
+    transition: border 1s;
+}
+
+.column img:hover {
+    border: 10px solid #ffffff7a;
+}
+
+.icon-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.apt-info-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); /* for IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* for Safari */
+    width: 50%;
+    height: 35%;
+    background-color: #222222;
+    padding: 0px 50px 50px 50px;
+    border: 10px solid #4a3263;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}

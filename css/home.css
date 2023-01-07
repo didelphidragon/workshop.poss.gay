@@ -1,0 +1,132 @@
+* {
+box-sizing: border-box;
+}
+
+i.fab {
+    color: #7900fa;
+}
+  
+i.fab:hover {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 4s ease infinite;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("/img/home_bg.png"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+    max-height: 100%;
+}
+
+.bg-text {
+    border:20px solid #7900fa4a; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); /* for IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* for Safari */
+    width: 50%;
+    padding: 0px 50px 50px 50px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    text-align: top;
+    color: #7900fa;
+    font-family: Oswald;
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    text-align: top;
+    color: #ffffff;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size:
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+    /* HOVER OFF */
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 300s linear 300ms, opacity 300ms;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 300s linear 300ms, opacity 300ms;
+}
+
+.column {
+    width: 10%;
+    padding: 5px;
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: Oswald;
+    font-size: 24px;
+    font-size: 1.25vw;
+}
+
+.column a {
+    text-decoration-color: #5900ba;
+}
+
+.column i {
+    image-rendering: crisp-edges;
+    object-fit: cover;
+    transition: border 1s;
+}
+
+.icon-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
